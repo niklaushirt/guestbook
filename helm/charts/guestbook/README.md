@@ -1,4 +1,4 @@
-# guestbook: an example chart for educational purpose.
+# guestbook: Tutorial chart for training purposes
 
 This chart provides example of some of the important features of Helm.
 
