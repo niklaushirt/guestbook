@@ -2,24 +2,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ .Release.Name }}-redis-slave
+  name: redis-slave
   labels:
-    app: {{ .Release.Name }}-redis
+    app: redis
     role: slave
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: {{ .Release.Name }}-redis
+      app: redis
       role: slave
   template:
     metadata:
       labels:
-        app: {{ .Release.Name }}-redis
+        app: redis
         role: slave
     spec:
       containers:
-      - name: {{ .Release.Name }}-redis-slave
+      - name: redis-slave
         image: gcr.io/google_samples/gb-redisslave:v1
         ports:
         - name: redis-server

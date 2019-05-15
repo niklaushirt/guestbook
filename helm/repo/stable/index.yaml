@@ -2,19 +2,19 @@ apiVersion: v1
 entries:
   guestbook:
   - apiVersion: v1
-    created: 2019-05-15T10:01:20.735888312+02:00
+    created: 2019-05-15T11:02:20.663878503+02:00
     description: A Helm chart to deploy Guestbook three tier web application.
-    digest: b1dd8ae1c001355c56a0fc6435a8f3f3bec79d7514d56de514990f73a820ad3f
+    digest: 7933565b6e583368cf266b2601ae145d7832e383bfffb38075713b119d33129f
     name: guestbook
     urls:
     - https://raw.githubusercontent.com/niklaushirt/guestbook/master/helm/repo/stable/guestbook-0.2.0.tgz
     version: 0.2.0
   - apiVersion: v1
-    created: 2019-05-15T10:01:20.735484549+02:00
+    created: 2019-05-15T11:02:20.663487011+02:00
     description: A Helm chart to deploy Guestbook three tier web application.
-    digest: e8e49d6b3e0fbe1e38ec2e72ed6d5f63d1e0fb0935f96c848742608145e62d57
+    digest: abbde8761f528ac3decc3f571cc1c8f7a602e8358c22bcc769cbb30a1bb0da6e
     name: guestbook
     urls:
     - https://raw.githubusercontent.com/niklaushirt/guestbook/master/helm/repo/stable/guestbook-0.1.0.tgz
     version: 0.1.0
-generated: 2019-05-15T10:01:20.734890853+02:00
+generated: 2019-05-15T11:02:20.662889027+02:00
