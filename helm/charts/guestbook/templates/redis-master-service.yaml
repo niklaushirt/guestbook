@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: redis-master
+  name: {{ .Release.Name }}-redis-master
   labels:
-    app: redis
+    app: {{ .Release.Name }}-redis
     role: master
 spec:
   ports:
   - port: {{ .Values.redis.port }}
     targetPort: redis-server
   selector:
-    app: redis
+    app: {{ .Release.Name }}-redis
     role: master

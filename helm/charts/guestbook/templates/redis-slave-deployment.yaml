@@ -2,24 +2,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: redis-slave
+  name: {{ .Release.Name }}-redis-slave
   labels:
-    app: redis
+    app: {{ .Release.Name }}-redis
     role: slave
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: redis
+      app: {{ .Release.Name }}-redis
       role: slave
   template:
     metadata:
       labels:
-        app: redis
+        app: {{ .Release.Name }}-redis
         role: slave
     spec:
       containers:
-      - name: redis-slave
+      - name: {{ .Release.Name }}-redis-slave
         image: kubernetes/redis-slave:v2
         ports:
         - name: redis-server

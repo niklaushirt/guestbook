@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: redis-master
+  name: {{ .Release.Name }}-redis-master
   labels:
-    app: redis
+    app: {{ .Release.Name }}-redis
     role: master
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: redis
+      app: {{ .Release.Name }}-redis
       role: master
   template:
     metadata:
       labels:
-        app: redis
+        app: {{ .Release.Name }}-redis
         role: master
     spec:
       containers:
-      - name: redis-master
+      - name: {{ .Release.Name }}-redis-master
         image: redis:2.8.23
         ports:
         - name: redis-server
