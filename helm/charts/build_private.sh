@@ -11,7 +11,7 @@ rm ./index.yaml
 #CREATE PACKAGES
 #-----------------------------------------------------------------------------------------------------------------
 helm package guestbook
-
+helm package icp-openldap-devel
 
 #HACK for DEMO LIBERTY
 mv *.tgz  ../repo/stable/

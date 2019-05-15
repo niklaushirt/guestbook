@@ -2,13 +2,13 @@
 
 This chart provides example of some of the important features of Helm.
 
-The chart installs a [guestbook](https://github.com/IBM/guestbook/tree/master/v1) application.
+The chart installs a [guestbook](https://github.com/niklaushirt/guestbook/tree/master/v1) application.
 
 ## Installing the Chart
 
 Add the repository to your local environment:
 ```bash
-$ helm repo add my-repo https://ibm.github.io/helm101/
+$ helm repo add my-repo https://raw.githubusercontent.com/niklaushirt/guestbook/master/helm/repo/stable
 ```
 
 To install the chart with the default release name:
@@ -44,7 +44,7 @@ The following tables lists the configurable parameters of the chart and their de
 | `image.pullPolicy`         | Image pull policy                               | `Always`                                                   |
 | `service.type`             | Service type                                    | `LoadBalancer`                                             |
 | `service.port`             | Service port                                    | `3000`                                                     |
-| `redis.slaveEnabled`       | Redis slave enabled                             | `true`                                                     |
+| `redis.slaveEnabled`       | Redis slave enabled                             | `false`                                                     |
 | `redis.port`               | Redis port                                      | `6379`                                                     |
 
 Specify each parameter using the `--set [key=value]` argument to `helm install`. For example,

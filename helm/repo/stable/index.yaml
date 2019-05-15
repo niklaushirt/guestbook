@@ -2,19 +2,37 @@ apiVersion: v1
 entries:
   guestbook:
   - apiVersion: v1
-    created: 2019-05-15T11:02:20.663878503+02:00
+    created: 2019-05-15T15:36:54.887818123+02:00
     description: A Helm chart to deploy Guestbook three tier web application.
-    digest: 7933565b6e583368cf266b2601ae145d7832e383bfffb38075713b119d33129f
+    digest: 159a59ba92157349a13d7048154fe9e8adf05f1a818f028be92dd9c99825903d
     name: guestbook
     urls:
     - https://raw.githubusercontent.com/niklaushirt/guestbook/master/helm/repo/stable/guestbook-0.2.0.tgz
     version: 0.2.0
   - apiVersion: v1
-    created: 2019-05-15T11:02:20.663487011+02:00
+    created: 2019-05-15T15:36:54.887355931+02:00
     description: A Helm chart to deploy Guestbook three tier web application.
-    digest: abbde8761f528ac3decc3f571cc1c8f7a602e8358c22bcc769cbb30a1bb0da6e
+    digest: a747a6a1132ac7590a0292d6b54d640aee04bf8777758ba2291955342c0b977d
     name: guestbook
     urls:
     - https://raw.githubusercontent.com/niklaushirt/guestbook/master/helm/repo/stable/guestbook-0.1.0.tgz
     version: 0.1.0
-generated: 2019-05-15T11:02:20.662889027+02:00
+  icp-openldap-devel:
+  - apiVersion: v1
+    created: 2019-05-15T15:36:54.88843035+02:00
+    description: A OpenLDAP Chart for Kubernetes
+    digest: d698a414d89b4eee9a17357e58476fb8019b8bd8647021189c906904ee815766
+    engine: gotpl
+    home: https://www.openldap.ort
+    keywords:
+    - ldap
+    maintainers:
+    - email: hans.kristian.moen@gmail.com
+      name: Hans Kristian Moen
+    name: icp-openldap-devel
+    sources:
+    - https://github.com/openldap/openldap
+    urls:
+    - https://raw.githubusercontent.com/niklaushirt/guestbook/master/helm/repo/stable/icp-openldap-devel-0.1.5.tgz
+    version: 0.1.5
+generated: 2019-05-15T15:36:54.886690068+02:00
