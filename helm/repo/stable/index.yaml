@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   guestbook:
   - apiVersion: v1
-    created: 2019-05-15T15:36:54.887818123+02:00
+    created: 2019-05-15T17:58:01.276698261+02:00
     description: A Helm chart to deploy Guestbook three tier web application.
     digest: 159a59ba92157349a13d7048154fe9e8adf05f1a818f028be92dd9c99825903d
     name: guestbook
@@ -10,7 +10,7 @@ entries:
     - https://raw.githubusercontent.com/niklaushirt/guestbook/master/helm/repo/stable/guestbook-0.2.0.tgz
     version: 0.2.0
   - apiVersion: v1
-    created: 2019-05-15T15:36:54.887355931+02:00
+    created: 2019-05-15T17:58:01.27566808+02:00
     description: A Helm chart to deploy Guestbook three tier web application.
     digest: a747a6a1132ac7590a0292d6b54d640aee04bf8777758ba2291955342c0b977d
     name: guestbook
@@ -19,7 +19,7 @@ entries:
     version: 0.1.0
   icp-openldap-devel:
   - apiVersion: v1
-    created: 2019-05-15T15:36:54.88843035+02:00
+    created: 2019-05-15T17:58:01.277250895+02:00
     description: A OpenLDAP Chart for Kubernetes
     digest: d698a414d89b4eee9a17357e58476fb8019b8bd8647021189c906904ee815766
     engine: gotpl
@@ -35,4 +35,27 @@ entries:
     urls:
     - https://raw.githubusercontent.com/niklaushirt/guestbook/master/helm/repo/stable/icp-openldap-devel-0.1.5.tgz
     version: 0.1.5
-generated: 2019-05-15T15:36:54.886690068+02:00
+  nfs-server-provisioner:
+  - apiVersion: v1
+    appVersion: 2.2.1-k8s1.12
+    created: 2019-05-15T17:58:01.277719443+02:00
+    description: nfs-server-provisioner is an out-of-tree dynamic provisioner for
+      Kubernetes. You can use it to quickly & easily deploy shared storage that works
+      almost anywhere.
+    digest: 0a4646277745f24229131b2bdd47f9fd7108aa07e097231832aee9a15113d65d
+    home: https://github.com/kubernetes/charts/tree/master/stable/nfs-server-provisioner
+    keywords:
+    - nfs
+    - storage
+    maintainers:
+    - email: kiall@macinnes.ie
+      name: kiall
+    - email: joaocc-dev@live.com
+      name: joaocc
+    name: nfs-server-provisioner
+    sources:
+    - https://github.com/kubernetes-incubator/external-storage/tree/master/nfs
+    urls:
+    - https://raw.githubusercontent.com/niklaushirt/guestbook/master/helm/repo/stable/nfs-server-provisioner-0.3.0.tgz
+    version: 0.3.0
+generated: 2019-05-15T17:58:01.274926312+02:00

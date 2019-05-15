@@ -12,6 +12,7 @@ rm ./index.yaml
 #-----------------------------------------------------------------------------------------------------------------
 helm package guestbook
 helm package icp-openldap-devel
+helm package nfs-server-provisioner
 
 #HACK for DEMO LIBERTY
 mv *.tgz  ../repo/stable/
