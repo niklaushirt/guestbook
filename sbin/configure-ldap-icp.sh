@@ -7,7 +7,7 @@ sudo apt-get install jq
 
 URL=`kubectl cluster-info | grep "Kubernetes master" | awk '{print $6}'`
 HOST=`echo $URL | cut -d'/' -f3 | cut -d':' -f1`
-LDAP=`kubectl get service openldap -o yaml | grep clusterIP | cut -d':' -f2 | xargs`
+LDAP=`kubectl get service ldap -n services -o yaml | grep clusterIP | cut -d':' -f2 | xargs`
 
 HOST_IP=$HOST
 LDAP_HOST_IP=${1:-$LDAP}
